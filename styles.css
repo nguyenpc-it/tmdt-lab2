@@ -51,10 +51,6 @@ main {
     line-height: 1.6;
 }
 
-.rating {
-    margin-top: 10px;
-}
-
 .quantity,
 .shipping,
 .color {
@@ -120,59 +116,66 @@ footer {
     border-radius: 5px;
 }
 .rating {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.rating p {
-    margin-right: 10px;
-}
-
-.stars {
-    display: inline-flex;
-    flex-direction: row-reverse;
-}
-
-.stars input[type="radio"] {
-    display: none;
-}
-
-.stars label {
-    font-size: 24px;
-    color: #ccc;
-    cursor: pointer;
-}
-
-.stars label:hover,
-.stars label:hover ~ label {
-    color: #ffdd00; /* Màu sao vàng khi di chuột qua */
-}
-
-.stars input[type="radio"]:checked ~ label {
-    color: #ffdd00; /* Màu sao vàng khi đánh giá */
-}
-.color {
-    margin: 10px 0;
-}
-
-.color label,
-.color input {
-    display: inline-block;
-}
-
-.color label {
-    margin-right: 10px;
-}
-
-.color input {
-    width: 120px;
-    padding: 5px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+    
+    .stars {
+        display: inline-flex;
+        flex-direction: row-reverse;
+    }
+    
+    .stars input[type="radio"] {
+        display: none;
+    }
+    
+    .stars label {
+        font-size: 24px;
+        color: #ccc;
+        cursor: pointer;
+    }
+    
+    .stars label:hover,
+    .stars label:hover ~ label {
+        color: #ffdd00; /* Màu sao vàng khi di chuột qua */
+    }
+    
+    .stars input[type="radio"]:checked ~ label {
+        color: #ffdd00; /* Màu sao vàng khi đánh giá */
+    }
+    
+    .rating-text {
+        margin-left: 10px;
+        font-size: 14px;
+        color: #333;
+    }
+    .color {
+        margin-top: 10px;
+    }
+    
+    .color label {
+        display: inline-block;
+        font-size: 16px;
+        color: #333;
+    }
+    
+    .color select {
+        font-size: 16px;
+        padding: 5px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        color: #333;
+        cursor: pointer;
+    }
+    
+    /* Tùy chỉnh màu nền của tùy chọn được chọn */
+    .color select option:checked {
+        background-color: #4CAF50;
+        color: white;
+    }
+    
 /* Tuỳ chỉnh giao diện nút "Thêm vào giỏ hàng" và "Mua hàng" */
 .add-to-cart,
 .buy-now {
