@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chi tiết sản phẩm kẹp tóc</title>
+    <title>Kẹp tóc hình bướm siêu xinh</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
@@ -12,7 +12,7 @@
     <meta property="og:title" content="Kẹp tóc hình bướm siêu xinh">
     <meta property="og:description" content="Kẹp tóc siêu xinh chỉ có tại Shop May Mắn">
     <meta property="og:image" content="image/1.jpg">
-    <meta property="og:url" content="https://yourwebsite.com/product">
+    <meta property="og:url" content="https://nguyenpc-it.github.io/tmdt-lab2/kep-toc-hinh-buom.html">
 
     <!-- Thẻ Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
@@ -23,7 +23,7 @@
 </head>
 <body>
     <header>
-        <h1>Chi tiết sản phẩm kẹp tóc</h1>
+        <h1>SHI TIẾT SẢN PHẨM</h1>
     </header>
     <main>
         <div class="product-container">
@@ -32,9 +32,7 @@
             </div>
             <div class="product-info">
                 <h2>Kẹp tóc hình bướm siêu xinh</h2>
-                <p>Giá: 49.990 VNĐ</p>
                 <div class="rating">
-                    <p>Đánh giá:</p>
                     <div class="stars">
                         <input type="radio" name="star" id="star5">
                         <label for="star5">&#9733;</label>
@@ -45,8 +43,17 @@
                         <input type="radio" name="star" id="star2">
                         <label for="star2">&#9733;</label>
                         <input type="radio" name="star" id="star1">
-                        <label for="star1">&#9733;</label>
-                    </div>
+                        <label for="star1">&#9733;</label> 
+                    </div> &nbsp;
+                    <div class="rating-text">45 đánh giá</div>
+                </div>
+                <p>Giá: 49.990 VNĐ</p>
+                <div class="color">
+                    <label for="color-select">Màu sắc:</label> &nbsp;
+                    <select id="color-select">
+                        <option value="red">Xanh đỏ</option>
+                        <option value="blue">Xanh tím</option>
+                    </select>
                 </div>
                 <div class="quantity">
                     <label for="quantity">Số lượng:</label>
@@ -90,8 +97,39 @@
             </p>
         </div>
     </main>
+    
     <footer>
         <p>&copy; @2023 Fighting. All rights reserved.</p>
     </footer>
 </body>
+<!-- Messenger Plugin chat Code -->
+<div id="fb-root"></div>
+
+<!-- Your Plugin chat code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "117053481453391");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+<!-- Your SDK code -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v17.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
 </html>
